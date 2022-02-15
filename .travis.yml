@@ -2,3 +2,5 @@ sudo: required
 language: java
 before_install:
   - mvn clean install
+install: true
+script: ./mvnw clean install
