@@ -1,7 +1,7 @@
 sudo: true
 language: java
 jdk:
- - oraclejdk17
+ - oraclejdk8
 install: true
 before_install:
   - mvn clean install
@@ -14,4 +14,5 @@ deploy:
  on:
   branch: main
   rvm: 2.6.0
+
   
