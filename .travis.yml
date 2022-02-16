@@ -1,11 +1,11 @@
 sudo: true
 language: java
+jdk:
+ - oraclejdk17
 install: true
 before_install:
   - mvn clean install
   - chmod +x mvnw
-rvm:
- - 2.6
 deploy:
  provider: heroku
  api-key: 
