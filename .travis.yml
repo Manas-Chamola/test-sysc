@@ -11,7 +11,6 @@ deploy:
  api-key: 
   secure: $HEROKU_API_KEY
  app: travis-ci-app-test
- run: 
-  - gem install faraday -v 1.8.0
  on:
   branch: main
+  rvm: 2.6.0
