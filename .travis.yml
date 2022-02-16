@@ -10,6 +10,7 @@ deploy:
  provider: heroku
  api-key: 
   secure: $HEROKU_API_KEY
+ run: - gem install faraday -v 1.8.0
  app: travis-ci-app-test
  on:
   branch: main
