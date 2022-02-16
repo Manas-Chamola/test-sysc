@@ -1,4 +1,6 @@
-sudo: required
+sudo: true
 language: java
 install: true
-script: ./mvnw clean install
+before_install:
+  - mvn clean install
+  - chmod +x mvnw
